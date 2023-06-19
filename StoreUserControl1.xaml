@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="WpfAppCoinStore.StoreUserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfAppCoinStore"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1200">
+    <Grid x:Name="store">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="myList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" Width="50"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="200"/>
+                    <GridViewColumn Header="Nominal" DisplayMemberBinding="{Binding Nominal}" Width="150"/>
+                    <GridViewColumn Header="Country" DisplayMemberBinding="{Binding Country}" Width="200"/>
+                    <GridViewColumn Header="Count" DisplayMemberBinding="{Binding Count}" Width="150"/>
+                    <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Price}" Width="150"/>
+                    <GridViewColumn Header="Exchenge" DisplayMemberBinding="{Binding Exchenge}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Grid.Column="1">
+            <Button Content="My coins" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

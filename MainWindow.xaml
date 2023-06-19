@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfAppCoinStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppCoinStore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="FirstWindow">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Background="#FFF2F311">Coin Store</Label>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Background="#FFB9EF7A" Click="Button_Click">LogIn</Button>
+                <Button Grid.Column="1" Background="#FF60A594" Click="Button_Click_1">SingUp</Button>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</Window>

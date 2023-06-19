@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="WpfAppCoinStore.MyCoinsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfAppCoinStore"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200">
+    <UserControl.Resources>
+        
+    </UserControl.Resources>
+    <Grid>
+        <Grid x:Name="Store">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="storeView" Grid.Column="0">
+                
+            </Grid>
+            <Grid x:Name="storeMenu" Grid.Column="1">
+                <StackPanel>
+                    <Button Content="Add coin" Click="Button_Click"/>
+                    <Button Content="Delete coin" Click="Button_Click_1"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
